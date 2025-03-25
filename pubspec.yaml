@@ -1,6 +1,6 @@
 name: guard_router
 description: "This package is available when you go_router It is a package with a guard function added."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/wp01053/guard_router
 
 environment:
