@@ -46,8 +46,8 @@ final router = GoRouter(
       path: '/protected',
       builder: (context, state) => ProtectedPage(),
     ).withAuthGuard(
-      isLoggedIn: () => checkLoginStatus(), // Your authentication check function
-      loginRoute: '/login',
+      isChecked: () => checkLoginStatus(), // Your authentication check function
+      redirectRoute: '/login',
     ),
   ],
 );
