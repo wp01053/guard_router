@@ -50,9 +50,11 @@ class _DialogGuardWrapperState extends State<DialogGuardWrapper> {
     // Before the condition check is over, the loading widget, etc. can be shown.
     if (!_checked) {
       return Center(
-          child: (widget.indicaotr != null)
-              ? widget.indicaotr
-              : const CircularProgressIndicator());
+        child:
+            (widget.indicaotr != null)
+                ? widget.indicaotr
+                : const CircularProgressIndicator(),
+      );
     }
     return widget.child;
   }

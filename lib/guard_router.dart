@@ -38,11 +38,12 @@ extension DialogGuardRoute on GoRoute {
     return GoRoute(
       path: path,
       name: name,
-      builder: (context, state) => DialogGuardWrapper(
-        isChecked: isChecked,
-        showDialogGuard: showDialogGuard,
-        child: builder?.call(context, state) ?? const SizedBox.shrink(),
-      ),
+      builder:
+          (context, state) => DialogGuardWrapper(
+            isChecked: isChecked,
+            showDialogGuard: showDialogGuard,
+            child: builder?.call(context, state) ?? const SizedBox.shrink(),
+          ),
       routes: routes,
     );
   }
